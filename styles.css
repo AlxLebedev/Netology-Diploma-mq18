@@ -47,6 +47,8 @@ p {
     padding-left: 0;
 }
 
+/*...........header code.............................................*/
+
 .main-header {
     position: relative;
     background-color: #0a0e34;
@@ -74,14 +76,13 @@ p {
     padding-left: 6.25%;
     padding-right: 6.25%;
     color: #ffffff;
-    
 }
 
 .logo {
     margin-bottom: 135px;
 }
 
-.logo a, .slogan {
+.logo a {
     display: flex;
 }
 
@@ -722,6 +723,7 @@ p {
     .to-do-item {
         display: flex;
         box-sizing: border-box;
+        position: relative;
     }
 
     .to-do-item:nth-child(2) {
@@ -741,12 +743,16 @@ p {
         width: 50%;
         box-sizing: border-box;
         padding: 260px 6.5% 77px 128px;
-        
+    }
+
+    .needs-to-do .to-do-item:nth-child(2) .to-do-content {
+        padding: 260px 128px 77px 6.5%;
     }
 
     .to-do-title {
         font-size: 80px;
         margin-bottom: 115px;
+        position: static;
     }
 
     .to-do-description {
@@ -758,24 +764,14 @@ p {
         height: 155px;
         font-size: 24px;
         line-height: 155px;
-        top: -35px;
-        left: -210px;
-    }
-
-    .needs-to-do .to-do-item:nth-child(2) .to-do-content .to-do-title::before {
-        top: -30px;
-        left: 750px;
+        top: 231px;
+        left: calc(50% - 84px);
     }
 
     .to-do-item .to-do-content .to-do-title::after {
-        top: 60px;
-        left: -140px;
+        top: 326px;
+        left: calc(50% - 15px);
         width: 30px;
-    }
-
-    .to-do-item:nth-child(2) .to-do-content .to-do-title::after {
-        top: 65px;
-        left: 820px;
     }
 
     .main-footer {
