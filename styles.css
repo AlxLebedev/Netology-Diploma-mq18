@@ -626,7 +626,7 @@ p {
     }
 
     .slogan-text {
-        font-size: 90px;
+        font-size: 4.68vw;
         line-height: normal;
     }
 
@@ -668,24 +668,20 @@ p {
     .athlets::before {
         background-image: url(img/footballer_566.png);
         z-index: 2;
-        background-position: 400px top;
+        background-position: 20% 30px;
+        background-size: 30vw;
     }
 
     .players::before {
         background-image: url(img/basketballer_991.png);
         z-index: 2;
         background-position: right top;
-        background-size: 800px;
-    }
-
-    .athlets-players {
-        padding-top: 115px;
+        background-size: 52vw;
     }
 
     .athlets .section-title {
-        margin-left: 0;
-        padding-left: 52.5%;
-        margin-bottom: 33px;
+        margin: 0;
+        padding: 115px 10% 33px 52.5%;
         font-size: 80px;
     }
 
@@ -717,16 +713,17 @@ p {
 
     .players .section-title {
         font-size: 80px;
-        margin-left: 10%;
-        margin-bottom: 30px;
+        margin: 0;
+        padding: 115px 52.5% 33px 10%;
     }
 
     .players .list-item {
-        padding: 43px 52.5% 40px 10%;
+        padding: 56px 52.5% 56px 10%;
     }
 
     .to-do-item {
         display: flex;
+        box-sizing: border-box;
     }
 
     .to-do-item:nth-child(2) {
@@ -738,9 +735,10 @@ p {
     }
 
     .to-do-content {
-        box-sizing: border-box;
-        padding: 260px 197px 0px 128px;
         width: 50%;
+        box-sizing: border-box;
+        padding: 260px 6.5% 77px 128px;
+        
     }
 
     .to-do-title {
