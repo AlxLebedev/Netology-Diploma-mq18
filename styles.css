@@ -33,6 +33,8 @@ h1, h2, h3 {
 }
 
 a {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     text-decoration: none;
 }
 
@@ -730,8 +732,13 @@ p {
         flex-direction: row-reverse;
     }
 
-    picture {
+    .to-do-pic {
        width: 50%;
+    }
+
+    .to-do-img {
+        height: 100%;
+        object-fit: cover;
     }
 
     .to-do-content {
