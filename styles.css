@@ -47,8 +47,6 @@ p {
     padding-left: 0;
 }
 
-/*...........header code.............................................*/
-
 .main-header {
     position: relative;
     background-color: #0a0e34;
@@ -278,6 +276,10 @@ p {
     border-radius: 2px;
 }
 
+.athlets-players .section-content .list-item:nth-child(1) .list-title::after {
+    width: 16px;
+}
+
 .to-do-content {
     padding: 33px 6.25% 80px 6.25%;
 }
@@ -334,10 +336,14 @@ p {
     position: absolute;
     top: -50px;
     left: 27px;
-    width: 15px;
+    width: 17px;
     height: 4px;
     border-radius: 2px;
     background-color: #8f7bc8;
+}
+
+.to-do-item:nth-child(1) .to-do-title::after {
+    width: 16px;
 }
 
 .to-do-description {
@@ -480,15 +486,20 @@ p {
     .athlets::before {
         background-image: url(img/footballer_497.png);
         z-index: 2;
-        background-position: -60% 130px;
-        background-size: 65vw;
+        width: 497px;
+        height: 699px;
+        top: 53px;
+        left: -150px;
+        
     }
 
     .players::before {
         background-image: url(img/basketballer_436.png);
         z-index: 2;
-        background-position: right 65px;
-        background-size: 57vw;
+        width: 436px;
+        height: 625px;
+        top: -15px;
+        right: 0;
     }
 
     .athlets .section-title {
@@ -542,7 +553,11 @@ p {
     .to-do-item .to-do-content .to-do-title::after {
         top: -110px;
         left: 45px;
-        width: 30px;
+        width: 28px;
+    }
+
+    .to-do-item:nth-child(1) .to-do-content .to-do-title::after {
+        width: 25px;
     }
 
     .to-do-content {
@@ -592,6 +607,18 @@ p {
 
     .main-footer .logo {
         margin-top: 55px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .athlets::before {
+        background-size: 65vw;
+        left: -170px;
+    }
+
+    .players::before {
+        background-size: 57vw;
+        right: -35px;
     }
 }
 
@@ -674,7 +701,7 @@ p {
     .players::before {
         background-image: url(img/basketballer_991.png);
         z-index: 2;
-        background-position: right top;
+        background-position: right 50px;
         background-size: 52vw;
     }
 
